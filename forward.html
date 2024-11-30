@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正在施工</title>
+  <link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colock.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  <script src="js/weather.js"></script>
+  <!-- 背景视频 -->
+  <video class="bgvideo" playsinline="" autoplay="" muted=""
+    poster="https://media.st.dl.eccdnx.com/steamcommunity/public/images/items/1406990/0fa275e7aa6514e876d5c34482010e9e6c7051f3.jpg"
+    loop="">
+    <source
+      src="https://media.st.dl.eccdnx.com/steamcommunity/public/images/items/1406990/915b1b4a05133186525a956d7ca5c142a3c3c9f3.webm"
+      type="video/webm">
+    <source
+      src="https://media.st.dl.eccdnx.com/steamcommunity/public/images/items/1406990/f5e956f69e888392812e8ddcf4a5ef10dc03bad7.mp4"
+      type="video/mp4">
+  </video>
+  <!-- 顶栏 -->
+  <header>
+    <div class="top container-fluid container-lg mt-lg-3">
+      <div class="row align-items-center">
+        <div class="col-2 col-lg-1 d-flex justify-content-center">
+          <a href="index.html"><img class="" src="img/logo.png" height="60px" alt="logo"></a>
+        </div>
+        <div class="col-8 col-lg-2">
+          <h1 class="title">小破站</h1>
+        </div>
+        <div class="col-2 col-lg-9">
+          <nav class="navbar navbar-expand-lg justify-content-end">
+            <!-- 折叠按钮 -->
+            <button title="Menu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 导航栏 -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="nav w-100 justify-content-end">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="index.html">主页</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="forward.html">文档</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="web.html">前端</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="forward.html">后端</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="https://lab.hakim.se/clickmeifyoucan/">娱乐</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="tool.html">工具</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="login btn btn-outline-info" aria-current="page" href="login.html">登录</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 内容 -->
+  <section>
+    <!-- 欢迎词 -->
+    <div class="container-fluid container-lg my-5 p-5">
+      <div class="row">
+        <div class="col-1 col-md-2 col-xl-3"></div>
+        <div class="welcome col-10 col-md-8 col-xl-6 text-center p-5 h1 text-danger fw-bold">
+          <span>在做了，在做了</span>
+          <p></p>
+          <p>
+            （新建文件夹）
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

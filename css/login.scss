@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.clear{
+  clear: both;
+}
+
+body {
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.shell {
+  display: flex;
+  justify-content: center;
+}
+
+.shell,
+form {
+  position: relative;
+}
+
+form {
+  width: 562px;
+  height: 520px;
+  background-color: #fff;
+  box-shadow: 5px 15px 40px #b6354e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-box {
+  width: 345px;
+  height: 520px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px 0 0 15px;
+  box-shadow: 5px 15px 40px #d77864;
+  left: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.form-body {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#welcome-lines {
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+
+.w-line {
+  &-1 {
+    color: #7f7f7f;
+    font-size: 50px;
+  }
+
+  &-2 {
+    color: #9c9c9c;
+    font-size: 30px;
+    margin-top: 17px;
+  }
+}
+
+#input {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.f-inp {
+  input {
+    box-sizing: border-box;
+    padding: 13px 25px;
+    border: 2px solid #6e6d6d;
+    line-height: 1;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+
+    &::placeholder {
+      color: #b9b9b9;
+    }
+  }
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 40px;
+  border: 0;
+  background-color: #f5506e;
+  border-radius: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#forgot-pass {
+  margin-top: 10px;
+  text-align: center;
+
+  a {
+    color: #868686;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#register {
+  margin-top: 6px;
+  text-align: center;
+
+  a {
+    color: #ff5acd;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

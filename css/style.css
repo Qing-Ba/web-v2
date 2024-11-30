@@ -1,0 +1,198 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border-radius: 20px;
+}
+* a {
+  text-decoration: none !important;
+}
+* svg {
+  width: 1em;
+  height: 1em;
+  border-radius: 0;
+}
+
+.bgvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+#weather .sw-container {
+  left: unset;
+  right: 10px;
+  top: unset;
+  bottom: 10px;
+  z-index: 1;
+}
+
+.top {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  background-color: rgba(155, 186, 213, 0.2);
+  background-image: linear-gradient(to left, rgba(152, 223, 254, 0.5019607843), rgba(111, 106, 255, 0.5019607843));
+}
+.top .title {
+  transition: 0.5s;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #98e0fe;
+  line-height: 52px;
+  font-family: "微软雅黑";
+  font-style: italic;
+  text-decoration: dashed underline #b0e0ff;
+  text-underline-offset: 6px;
+  text-shadow: 2px 2px 0 #08aeea, 4px 4px 0 #98e0fe;
+  -webkit-text-stroke: 1px #08aeea;
+  -webkit-text-fill-color: transparent;
+}
+.top .title:hover {
+  text-shadow: 2px 2px 0 #5470ff, 4px 4px 0 #a998fe;
+  -webkit-text-fill-color: currentColor;
+}
+
+.active {
+  color: rgb(255, 135, 135) !important;
+}
+
+.navbar .nav-item {
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.navbar .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2509803922);
+}
+.navbar .nav-item:hover a {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  color: #ff5050 !important;
+  font-weight: bold;
+}
+.navbar .nav-item a {
+  color: #dedfff;
+  font-weight: bold;
+}
+
+.search-box {
+  height: 50px;
+  border: 1px solid #000000;
+  background-color: rgba(95, 95, 95, 0.5019607843);
+  color: #3c3c3c;
+  border-radius: 25px !important;
+}
+.search-box:hover {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.carousel-inner {
+  opacity: 0.9;
+}
+
+.bi-search {
+  transition: 1s;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0);
+}
+.bi-search:hover {
+  color: #ff5050 !important;
+}
+
+.content {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(155, 186, 213, 0.2);
+  background-image: linear-gradient(to left, rgba(152, 223, 254, 0.8), rgba(111, 106, 255, 0.8));
+  opacity: 80;
+}
+
+.weblist {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  transition: 0.5s;
+  color: #ffffff;
+}
+.weblist span {
+  display: inline-flex;
+}
+.weblist:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.4);
+  color: #ff5050 !important;
+}
+
+.contact {
+  transition: 0.5s;
+  border: #5470ff 4px solid;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+.contact:nth-child(3):hover .tip {
+  color: aqua !important;
+}
+.contact:hover {
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.contact:hover .tip {
+  visibility: visible;
+}
+.contact .tip {
+  visibility: hidden;
+}
+.contact a {
+  transition: 0.3s;
+  display: inline-flex;
+}
+.contact a:hover {
+  transform: scale(1.1);
+}
+
+.welcome {
+  transition: 0.5s;
+  border: #5470ff 4px dashed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 30px !important;
+  }
+  .navbar-nav {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background-color: rgba(155, 186, 213, 0.2);
+    background-image: linear-gradient(to left, rgba(152, 223, 254, 0.5019607843), rgba(111, 106, 255, 0.5019607843));
+  }
+  .navbar-nav a {
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  #live2d {
+    display: none !important;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  .title {
+    font-size: 25px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 25px !important;
+  }
+}

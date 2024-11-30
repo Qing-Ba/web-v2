@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/register.css">
+  <title>注册界面</title>
+</head>
+
+<body>
+
+  <section>
+    <div class="shell">
+      <form action="#" method="post">
+        <div class="form-body">
+          <div id="welcome-lines">
+            <h1>欢迎加入</h1>
+            <h2>李清霸の小窝</h2>
+          </div>
+          <div id="input">
+            <div id="username">
+              <label for="">用户名：</label>
+              <div class="f-inp">
+                <input type="text" placeholder="Username" pattern="[A-Za-z0-9]+" required>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div id="email">
+              <label for="">邮箱：</label>
+              <div class="f-inp">
+                <input type="text" placeholder="Email Address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  required>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div id="password">
+              <label for="">密码：</label>
+              <div class="f-inp">
+                <input type="password" placeholder="Password" minlength="6" maxlength="15" required>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div id="re-password">
+              <label for="">重复密码：</label>
+              <div class="f-inp">
+                <input type="password" placeholder="Re-Password" minlength="6" maxlength="15" required>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div id="select-data">
+              <label for="">出生日期：</label>
+              <div class="data">
+                <div class="month">
+                  <label for=""><span>月</span></label>
+                  <select title="month" name="data" class="select-data">
+                    <option value="1">1 月</option>
+                    <option value="2">2 月</option>
+                    <option value="3">3 月</option>
+                    <option value="4">4 月</option>
+                    <option value="5">5 月</option>
+                    <option value="6">6 月</option>
+                    <option value="7">7 月</option>
+                    <option value="8">8 月</option>
+                    <option value="9">9 月</option>
+                    <option value="10">10 月</option>
+                    <option value="11">11 月</option>
+                    <option value="12">12 月</option>
+                  </select>
+                </div>
+                <div class="day">
+                  <label for=""><span>日</span></label>
+                  <select title="day" name="data" class="select-data">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                </div>
+                <div class="year">
+                  <label for=""><span>年</span></label>
+                  <select title="year" name="data" class="select-data">
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div id="select-gender">
+              <label for="">性别：</label>
+              <div class="gender">
+                <div class="man">
+                  <input title="man" type="radio" name="gender" value="男"><span>男</span>
+                </div>
+                <div class="woman">
+                  <input title="woman" type="radio" name="gender" value="女"><span>女</span>
+                </div>
+                <div class="secret">
+                  <input title="secret" type="radio" name="gender" value="保密"><span>保密</span>
+                </div>
+                
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div id="submit">
+            <button type="submit" class="submit-btn">注册</button>
+          </div>
+          <div id="login">已经有账号了？
+            <a href="login.html">登录</a>
+          </div>
+        </div>
+      </form>
+      <div id="img-box">
+        <img src="./img/register_bg.jpg" alt="">
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
