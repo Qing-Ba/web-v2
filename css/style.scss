@@ -1,222 +1,224 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border-radius: 20px;
 
-  a {
-    text-decoration: none !important;
-  }
+    a {
+        text-decoration: none !important;
+    }
 
-  svg {
-    width: 1em;
-    height: 1em;
-    border-radius: 0;
-  }
+    svg {
+        width: 1em;
+        height: 1em;
+        border-radius: 0;
+    }
 
 }
 
 .bgvideo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: -1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 }
 
 #weather .sw-container {
-  left: unset;
-  right: 10px;
-  top: unset;
-  bottom: 10px;
-  z-index: 1;
+    left: unset;
+    right: 10px;
+    top: unset;
+    bottom: 10px;
+    z-index: 1;
 }
 
 .top {
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  background-color: #9bbad533;
-  background-image: linear-gradient(to left, #98dffe80, #6f6aff80);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background-color: #9bbad533;
+    background-image: linear-gradient(to left, #98dffe80, #6f6aff80);
 
-  .title {
-    transition: 0.5s;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #98e0fe;
-    line-height: 52px;
-    font-family: "微软雅黑";
-    font-style: italic;
-    text-decoration: dashed underline #b0e0ff;
-    text-underline-offset: 6px;
-    text-shadow: 2px 2px 0 #08aeea, 4px 4px 0 #98e0fe;
-    -webkit-text-stroke: 1px #08aeea;
-    -webkit-text-fill-color: transparent;
+    .title {
+        transition: 0.5s;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #98e0fe;
+        line-height: 52px;
+        font-family: "微软雅黑";
+        font-style: italic;
+        text-decoration: dashed underline #b0e0ff;
+        text-underline-offset: 6px;
+        text-shadow: 2px 2px 0 #08aeea, 4px 4px 0 #98e0fe;
+        -webkit-text-stroke: 1px #08aeea;
+        -webkit-text-fill-color: transparent;
 
-    &:hover {
-      text-shadow: 2px 2px 0 #5470ff, 4px 4px 0 #a998fe;
-      -webkit-text-fill-color: currentColor;
+        &:hover {
+            text-shadow: 2px 2px 0 #5470ff, 4px 4px 0 #a998fe;
+            -webkit-text-fill-color: currentColor;
+        }
     }
-  }
 }
 
 .active {
-  color: rgb(255, 135, 135) !important;
+    color: rgb(255, 135, 135) !important;
 }
 
 .navbar {
-  .nav-item {
-    transition: 0.5s;
-    border-radius: 10px;
+    .nav-item {
+        transition: 0.5s;
+        border-radius: 10px;
 
-    &:hover {
-      background-color: #ffffff40;
+        &:hover {
+            background-color: #ffffff40;
 
-      a {
-        box-shadow: 0 0 1rem #00000099;
-        color: #ff5050 !important;
-        font-weight: bold;
-      }
+            a {
+                box-shadow: 0 0 1rem #00000099;
+                color: #ff5050 !important;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            color: #dedfff;
+            font-weight: bold;
+        }
     }
-
-    a {
-      color: #dedfff;
-      font-weight: bold;
-    }
-  }
 }
 
 .search-box {
-  height: 50px;
-  border: 1px solid #000000;
-  background-color: #5f5f5f80;
-  color: #3c3c3c;
-  border-radius: 25px !important;
+    height: 50px;
+    border: 1px solid #000000;
+    background-color: #5f5f5f80;
+    color: #3c3c3c;
+    border-radius: 25px !important;
 
-  &:hover {
-    background-color: #ffffff80;
-  }
+    &:hover {
+        background-color: #ffffff80;
+    }
 }
 
 .carousel-inner {
-  opacity: .90;
+    opacity: .90;
 }
 
 .bi-search {
-  transition: 1s;
-  text-shadow: 2px 2px 2px #ffffff99;
+    transition: 1s;
+    text-shadow: 2px 2px 2px #ffffff99;
 
-  &:hover {
-    color: #ff5050 !important;
-  }
+    &:hover {
+        color: #ff5050 !important;
+    }
 }
 
 .content {
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(10px);
-  background-color: #9bbad533;
-  background-image: linear-gradient(to left, #98dffecc, #6f6affcc);
-  opacity: 80;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #9bbad533;
+    background-image: linear-gradient(to left, #98dffecc, #6f6affcc);
+    opacity: 80;
 }
 
 .weblist {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 15px;
-  background-color: #00000040;
-  transition: .5s;
-  color: #ffffff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    background-color: #00000040;
+    transition: .5s;
+    color: #ffffff;
 
-  span {
-    display: inline-flex;
-  }
+    span {
+        display: inline-flex;
+    }
 
-  &:hover {
-    transform: scale(1.1);
-    background: rgba(0, 0, 0, .4);
-    color: #ff5050 !important;
-  }
+    &:hover {
+        transform: scale(1.1);
+        background: rgba(0, 0, 0, .4);
+        color: #ff5050 !important;
+    }
 }
 
 .contact {
-  transition: 0.5s;
-  border: #5470ff 4px solid;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+    transition: 0.5s;
+    border: #5470ff 4px solid;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 
-  &:nth-child(3):hover .tip {
-    color: aqua !important;
-  }
-
-  &:hover {
-    background-color: #00000060;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-
-    .tip {
-      visibility: visible;
+    &:nth-child(3):hover .tip {
+        color: aqua !important;
     }
-  }
-
-  .tip {
-    visibility: hidden;
-  }
-
-  a {
-    transition: .3s;
-    display: inline-flex;
 
     &:hover {
-      transform: scale(1.1);
+        background-color: #00000060;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        .tip {
+            visibility: visible;
+        }
     }
-  }
+
+    .tip {
+        visibility: hidden;
+    }
+
+    a {
+        transition: .3s;
+        display: inline-flex;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .welcome {
-  transition: 0.5s;
-  border: #5470ff 4px dashed;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    transition: 0.5s;
+    border: #5470ff 4px dashed;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 @media screen {
-  @media (max-width: 991px) {
-    .title {
-      font-size: 30px !important;
+    @media (max-width: 991px) {
+        .title {
+            font-size: 30px !important;
+        }
+
+        .navbar-nav {
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            background-color: rgba(155, 186, 213, 0.2);
+            background-image: linear-gradient(to left, rgba(152, 223, 254, 0.5019607843), rgba(111, 106, 255, 0.5019607843));
+
+            a {
+                z-index: 2;
+            }
+        }
     }
-    .navbar-nav {
-      backdrop-filter: blur(2px);
-      -webkit-backdrop-filter: blur(2px);
-      background-color: rgba(155, 186, 213, 0.2);
-      background-image: linear-gradient(to left, rgba(152, 223, 254, 0.5019607843), rgba(111, 106, 255, 0.5019607843));
 
-      a {
-        z-index: 2;
-      }
+    @media screen and (max-width: 768px) {
+        #live2d {
+            display: none !important;
+        }
+
+        .carousel-indicators {
+            display: none !important;
+        }
+
+        .title {
+            font-size: 25px !important;
+        }
     }
-  }
 
-@media screen and (max-width: 768px) {
-  #live2d {
-    display: none !important;
-  }
-
-  .carousel-indicators {
-    display: none !important;
-  }
-
-  .title {
-    font-size: 25px !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .title {
-    font-size: 25px !important;
-  }
+    @media screen and (max-width: 576px) {
+        .title {
+            font-size: 25px !important;
+        }
+    }
 }
